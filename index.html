@@ -6,15 +6,15 @@
   <title>Avaliação de Atendimento – Cartório Moura</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-:root {
-      --bg: #ffffff;
-      --surface: #f5f5f5;
-      --gold: #c0392b;
-      --gold-light: #df3a28;
-      --gold-dim: #922b21;
-      --text: #1a1a1a;
-      --text-muted: #888888;
-      --border: #e0e0e0;
+    :root {
+      --bg: #0f0e0c;
+      --surface: #1a1814;
+      --gold: #c9a84c;
+      --gold-light: #e8c97a;
+      --gold-dim: #7a6330;
+      --text: #f0ead8;
+      --text-muted: #8a8070;
+      --border: #2e2a22;
       --success: #4caf7a;
     }
 
@@ -353,8 +353,11 @@
 
       <!-- Passo 1: Funcionário -->
       <div class="step-label">Passo 1 de 3</div>
-      <div class="section-title">Quem lhe atendeu?</div>
+      <div class="section-title">Quem te atendeu?</div>
       <div class="funcionarios">
+        <button class="func-btn" onclick="selecionarFunc(this, 'Ryan Vasconcelos')">
+          <div class="avatar">RV</div> Ryan Vasconcelos
+        </button>
         <button class="func-btn" onclick="selecionarFunc(this, 'Flaviana Farias')">
           <div class="avatar">FF</div> Flaviana Farias
         </button>
@@ -368,11 +371,11 @@
           <div class="avatar">QL</div> Quérsia Linhares
         </button>
       </div>
-      <div class="erro" id="erro-func">Por favor, selecione o funcionário que prestou seu atendimento.</div>
+      <div class="erro" id="erro-func">Por favor, selecione o funcionário que te atendeu.</div>
 
       <!-- Passo 2: Nota -->
       <div class="step-label">Passo 2 de 3</div>
-      <div class="section-title">Qual nota você dá para seu atendimento?</div>
+      <div class="section-title">Como foi seu atendimento?</div>
       <div class="nota-section">
         <div class="nota-display">
           <div class="nota-valor" id="nota-valor">5</div>
@@ -409,7 +412,7 @@
   <footer>Cartório Moura · Todos os direitos reservados</footer>
 
   <script>
-    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwMJe78-I6Htcb4wq9QLCnRf1FG-9R3-GcSjCC9ACMO1fJgoFOJAWvYsHiIg-MZGpMIRA/exec';
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbymIua8lYsm9bk83H5msHnqoZ0egolrlBOFx7uqcD53iJ91nvEt870QTJcoPAWQiMxo/exec';
 
     let funcSelecionado = null;
 
